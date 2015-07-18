@@ -1,15 +1,15 @@
-# MMS关键指标意义&各数值区间意义
-
+# MMS关键指标意义&各数值区间意义&部署
+##part 1 mms图
 ------
-# What's MMS
+### What's MMS
 MongoDB Management Service (MMS) is a suite of services for managing MongoDB deployments.
 
-# 统计图表的数据来源
+### 统计图表的数据来源
 all statistics can show in mongo shell by:
 
     >db.serverStatus()
 
-## 
+### 
 
  1. opcounters
 意义：The average number of commands performed per second since the last data point
@@ -61,7 +61,7 @@ misses: The number of times a btree page was not in memory
 ![此处输入图片的描述][7]
   ref:[link][8]
 
-# PART 2 mms-monitoring-agent and mms-backup-agent
+## PART 2 mms-monitoring-agent and mms-backup-agent
 monitoring agent: 主要用于监控db 状态
 backup agent 主要用于备份db 到云端
 
