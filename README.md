@@ -61,6 +61,35 @@ misses: The number of times a btree page was not in memory
 ![此处输入图片的描述][7]
   ref:[link][8]
 
+# PART 2 mms-monitoring-agent and mms-backup-agent
+monitoring agent: 主要用于监控db 状态
+backup agent 主要用于备份db 到云端
+
+
+monitoring:
+安装：
+https://docs.cloud.mongodb.com/tutorial/install-monitoring-agent-with-deb-package/
+
+如何开启／关闭
+
+    sudo start mongodb-mms-monitoring-agent
+    sudo stop mongodb-mms-monitoring-agent 
+    https://docs.cloud.mongodb.com/tutorial/start-or-stop-monitoring-agent/
+
+backup :
+https://docs.cloud.mongodb.com/tutorial/install-backup-agent-with-deb-package/
+how to start & stop
+
+    sudo start mongodb-mms-backup-agent
+
+  或者：
+  
+
+    sudo nohup ./mongodb-mms-backup-agent >> backup-agent.log 2>&1 &
+
+注意权限
+
+https://docs.cloud.mongodb.com/tutorial/start-or-stop-backup-agent/
 
   [1]: http://7xk67t.com1.z0.glb.clouddn.com/mms-opcounters.png
   [2]: http://7xk67t.com1.z0.glb.clouddn.com/mms-queues.png
@@ -70,3 +99,4 @@ misses: The number of times a btree page was not in memory
   [6]: http://7xk67t.com1.z0.glb.clouddn.com/mms-asserts.png
   [7]: http://7xk67t.com1.z0.glb.clouddn.com/mms-pageFaults.png
   [8]: http://www.cnblogs.com/no7dw/archive/2013/02/20/2918372.html
+
